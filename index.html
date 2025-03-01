@@ -40,7 +40,7 @@
               class="flex items-center bg-blue-50 px-4 py-2 rounded-[32px] gap-2"
             >
               <img class="w-5" src="./assets/checkbox.png" alt="" srcset="" />
-              <p class="font-bold text-neutral-950 text-xl">23</p>
+              <p class="font-bold text-neutral-950 text-xl"><span id="add-number">23</span></p>
             </div>
 
             <img class="w-10" src="./assets/theme-btn.png" alt="" srcset="" />
@@ -67,7 +67,7 @@
             </div>
             <div>
               <p class="text-cyan-950 font-medium text-base">Task Assigned</p>
-              <p class="text-cyan-950 font-bold text-2xl">05</p>
+              <p  class="text-cyan-950 font-bold text-2xl"><span id="less-number">5</span></p>
             </div>
           </div>
 
@@ -132,7 +132,7 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button
+                  <button id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -214,7 +214,7 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button
+                  <button  id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -255,7 +255,7 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button
+                  <button  id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -296,7 +296,7 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button
+                  <button  id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -337,7 +337,7 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button
+                  <button  id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -359,6 +359,24 @@
       </section>
     </main>
 
-    <script src="./Script/addcompltbtn.js"></script>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Example</title>
+</head>
+<body>
+
+    <p>Count 1: <span id="count1">5</span></p>
+    <p>Count 2: <span id="count2">23</span></p>
+    <button onclick="handleClick()">Click Me</button>
+
+    
+
+</body>
+</html>
+
+    <script src="./Script/script.js"></script>
   </body>
 </html>
