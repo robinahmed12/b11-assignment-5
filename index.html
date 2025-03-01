@@ -20,6 +20,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
   </head>
+  
   <body class="font-poppins bg-blue-50">
     <header>
       <div class="max-w-screen-xl mb-10 mx-auto pt-10">
@@ -40,7 +41,9 @@
               class="flex items-center bg-blue-50 px-4 py-2 rounded-[32px] gap-2"
             >
               <img class="w-5" src="./assets/checkbox.png" alt="" srcset="" />
-              <p class="font-bold text-neutral-950 text-xl"><span id="add-number">23</span></p>
+              <p class="font-bold text-neutral-950 text-xl">
+                <span id="add-number">23</span>
+              </p>
             </div>
 
             <img class="w-10" src="./assets/theme-btn.png" alt="" srcset="" />
@@ -67,7 +70,9 @@
             </div>
             <div>
               <p class="text-cyan-950 font-medium text-base">Task Assigned</p>
-              <p  class="text-cyan-950 font-bold text-2xl"><span id="less-number">5</span></p>
+              <p class="text-cyan-950 font-bold text-2xl">
+                <span id="less-number">6</span>
+              </p>
             </div>
           </div>
 
@@ -76,7 +81,7 @@
             class="flex items-center justify-center text-center w-[520px] h-[100px] rounded-xl bg-gradient-to- from-indigo-600 bg-indigo-400 ... gap-3"
           >
             <img class="w-[90px]" src="./assets/board.png" alt="" srcset="" />
-            <p class="text-white font-medium text-2xl">
+            <p id="discover-something" class="text-white font-medium text-2xl">
               Discover Something <br />
               New Today!
             </p>
@@ -99,10 +104,12 @@
         </div>
 
         <!-- task section -->
-        <!-- container -->
+
+        <!-- container  -->
+
         <div class="grid grid-cols-3 pb-10 mt-10">
+          <!-- task box 1 -->
           <div class="flex items-center gap-8 px-4 mt-10">
-            <!-- task box -->
             <div class="w-[340px] h-[310px] px-6 py-2 rounded-3xl bg-blue-50">
               <!-- box 1 -->
               <div class="pt-3">
@@ -132,8 +139,9 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button id="completed-btn"
-                    class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
+                  <button
+                    id="completed-btn"
+                    class="bg-indigo-600 #bg-gray #text-red px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
                   </button>
@@ -142,8 +150,8 @@
             </div>
           </div>
 
+          <!-- task box 2 -->
           <div class="flex items-center rounded-2xl gap-8 px-4 mt-10">
-            <!-- task box -->
             <div class="w-[340px] h-[310px] rounded-3xl px-6 py-2 bg-blue-50">
               <!-- box 1 -->
               <div class="pt-3">
@@ -174,7 +182,8 @@
                     >
                   </p>
                   <button
-                    class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
+                    id="completed-btn"
+                    class="bg-indigo-600  px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
                   </button>
@@ -182,9 +191,8 @@
               </div>
             </div>
           </div>
-
+          <!-- task box 3 -->
           <div class="flex items-center gap-8 px-4 mt-10">
-            <!-- task box -->
             <div class="w-[340px] h-[310px] px-6 py-2 rounded-3xl bg-blue-50">
               <!-- box 1 -->
               <div class="pt-3">
@@ -214,7 +222,8 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button  id="completed-btn"
+                  <button
+                    id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -223,9 +232,8 @@
               </div>
             </div>
           </div>
-
+          <!-- task box 4 -->
           <div class="flex items-center rounded-2xl gap-8 px-4 mt-10">
-            <!-- task box -->
             <div class="w-[340px] h-[310px] rounded-3xl px-6 py-2 bg-blue-50">
               <!-- box 1 -->
               <div class="pt-3">
@@ -255,7 +263,8 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button  id="completed-btn"
+                  <button
+                    id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -264,9 +273,49 @@
               </div>
             </div>
           </div>
-
+          <!-- task box 5 -->
           <div class="flex items-center rounded-2xl gap-8 px-4 mt-10">
-            <!-- task box -->
+            <div class="w-[340px] h-[310px] rounded-3xl px-6 py-2 bg-blue-50">
+              <!-- box 1 -->
+              <div class="pt-3">
+                <!--  -->
+                <div
+                  class="mb-3 bg-white w-[114px] h-[40px] px-4 py-2 rounded-xl"
+                >
+                  <p class="text-cyan-950 font-normal text-base">shopEase</p>
+                </div>
+                <!-- title -->
+                <p id="title" class="mb-3 text-cyan-950 font-medium text-2xl">
+                  Fix Mobile Button Issue
+                </p>
+                <!-- description -->
+                <div class="bg-white px-4 py-4 rounded-xl mb-3">
+                  <p class="text-black font-normal text-base">
+                    Debug using Chrome DevTools, check for overlapping
+                    elements...
+                  </p>
+                </div>
+
+                <!-- deadline and btn -->
+                <div class="flex justify-between mt-5 items-center">
+                  <p class="text-cyan-950 font-normal text-sm">
+                    Deadline <br />
+                    <span class="text-cyan-950 font-medium text-base"
+                      >21 March 2025</span
+                    >
+                  </p>
+                  <button
+                    id="completed-btn"
+                    class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- task box 6 -->
+          <div class="flex items-center rounded-2xl gap-8 px-4 mt-10">
             <div class="w-[340px] h-[310px] rounded-3xl px-6 py-2 bg-blue-50">
               <!-- box 1 -->
               <div class="pt-3">
@@ -296,48 +345,8 @@
                       >21 March 2025</span
                     >
                   </p>
-                  <button  id="completed-btn"
-                    class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
-                  >
-                    Completed
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex items-center rounded-2xl gap-8 px-4 mt-10">
-            <!-- task box -->
-            <div class="w-[340px] h-[310px] rounded-3xl px-6 py-2 bg-blue-50">
-              <!-- box 1 -->
-              <div class="pt-3">
-                <!--  -->
-                <div
-                  class="mb-3 bg-white w-[114px] h-[40px] px-4 py-2 rounded-xl"
-                >
-                  <p class="text-cyan-950 font-normal text-base">shopEase</p>
-                </div>
-                <!-- title -->
-                <p class="mb-3 text-cyan-950 font-medium text-2xl">
-                  Fix Mobile Button Issue
-                </p>
-                <!-- description -->
-                <div class="bg-white px-4 py-4 rounded-xl mb-3">
-                  <p class="text-black font-normal text-base">
-                    Debug using Chrome DevTools, check for overlapping
-                    elements...
-                  </p>
-                </div>
-
-                <!-- deadline and btn -->
-                <div class="flex justify-between mt-5 items-center">
-                  <p class="text-cyan-950 font-normal text-sm">
-                    Deadline <br />
-                    <span class="text-cyan-950 font-medium text-base"
-                      >21 March 2025</span
-                    >
-                  </p>
-                  <button  id="completed-btn"
+                  <button
+                    id="completed-btn"
                     class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base"
                   >
                     Completed
@@ -349,33 +358,19 @@
         </div>
       </section>
 
-      <section class="bg-white rounded-3xl w-[300px]" >
-        <div>
+      <section class="bg-white rounded-3xl w-[300px]">
+        <div id="history-section">
           <div class="flex items-center gap-3 justify-center mt-10">
-            <img class=" w-6" src="./assets/activity.png" alt="" srcset="">
+            <img class="w-6" src="./assets/activity.png" alt="" srcset="" />
             <p class="text-cyan-950 font-medium text-xl">Activity History</p>
           </div>
+          <div class="text-center mt-7">
+            <button id="clear-history-btn" class="bg-indigo-600 px-5 py-3 rounded-xl text-white font-medium text-base">Clear History</button>
+          </div>
+
         </div>
       </section>
     </main>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter Example</title>
-</head>
-<body>
-
-    <p>Count 1: <span id="count1">5</span></p>
-    <p>Count 2: <span id="count2">23</span></p>
-    <button onclick="handleClick()">Click Me</button>
-
-    
-
-</body>
-</html>
 
     <script src="./Script/script.js"></script>
   </body>
