@@ -40,7 +40,7 @@
             <div
               class="flex items-center bg-blue-50 px-4 py-2 rounded-[32px] gap-2"
             >
-              <img class="w-5" src="./assets/checkbox.png" alt="" srcset="" />
+              <img id="change-color" class="w-5" src="./assets/checkbox.png" alt="" srcset="" />
               <p class="font-bold text-neutral-950 text-xl">
                 <span id="add-number">23</span>
               </p>
@@ -77,26 +77,27 @@
           </div>
 
           <!-- new today part -->
-          <div
+          <div id="discover"
             class="flex items-center justify-center text-center w-[520px] h-[100px] rounded-xl bg-gradient-to- from-indigo-600 bg-indigo-400 ... gap-3"
           >
             <img class="w-[90px]" src="./assets/board.png" alt="" srcset="" />
-            <p id="discover-something" class="text-white font-medium text-2xl">
+            <p  class="text-white font-medium text-2xl">
               Discover Something <br />
               New Today!
             </p>
           </div>
+
           <!-- date section -->
-          <div
-            class="flex items-center justify-center relative bg-blue-50 w-[200px] h-[100px] px-5 rounded-xl gap-3"
+          <div 
+            class="flex items-center   relative bg-blue-50 w-[200px] h-[100px] px-5 rounded-xl gap-8"
           >
-            <div class="bg-white relative w-10 h-10 rounded-full">
+            <div  class="bg-white relative w-10 h-10 rounded-full">
               <img
-                class="w-5 absolute left-[10px] top-[10px]"
+                class="w-5 absolute left-[5px] top-[10px]"
                 src="./assets/calender.png"
               />
             </div>
-            <p class="flex">
+            <p id="local-date"  class="flex">
               Wed ,<br />
               Jul 28 2025
             </p>
@@ -107,7 +108,7 @@
 
         <!-- container  -->
 
-        <div class="grid grid-cols-3 pb-10 mt-10">
+        <div  class="grid grid-cols-3 pb-10 mt-10">
           <!-- task box 1 -->
           <div class="flex items-center gap-8 px-4 mt-10">
             <div class="w-[340px] h-[310px] px-6 py-2 rounded-3xl bg-blue-50">
@@ -120,7 +121,7 @@
                   <p class="text-cyan-950 font-normal text-base">shopEase</p>
                 </div>
                 <!-- title -->
-                <p class="mb-3 text-cyan-950 font-medium text-2xl">
+                <p id="title" class="mb-3 text-cyan-950 font-medium text-2xl">
                   Fix Mobile Button Issue
                 </p>
                 <!-- description -->
@@ -159,17 +160,16 @@
                 <div
                   class="mb-3 bg-white w-[114px] h-[40px] px-4 py-2 rounded-xl"
                 >
-                  <p class="text-cyan-950 font-normal text-base">shopEase</p>
+                  <p class="text-cyan-950 font-normal text-base">CloudSync</p>
                 </div>
                 <!-- title -->
-                <p class="mb-3 text-cyan-950 font-medium text-2xl">
-                  Fix Mobile Button Issue
+                <p id="title" class="mb-3 text-cyan-950 font-medium text-2xl">
+                  Add Dark Mode    
                 </p>
                 <!-- description -->
                 <div class="bg-white px-4 py-4 rounded-xl mb-3">
                   <p class="text-black font-normal text-base">
-                    Debug using Chrome DevTools, check for overlapping
-                    elements...
+                    Store the user's preference in localStorage, update CSS variables dynamically.
                   </p>
                 </div>
 
@@ -178,7 +178,7 @@
                   <p class="text-cyan-950 font-normal text-sm">
                     Deadline <br />
                     <span class="text-cyan-950 font-medium text-base"
-                      >21 March 2025</span
+                      >14 May 2025</span
                     >
                   </p>
                   <button
@@ -200,11 +200,11 @@
                 <div
                   class="mb-3 bg-white w-[114px] h-[40px] px-4 py-2 rounded-xl"
                 >
-                  <p class="text-cyan-950 font-normal text-base">shopEase</p>
+                  <p class="text-cyan-950 font-normal text-base">SwiftPay</p>
                 </div>
                 <!-- title -->
-                <p class="mb-3 text-cyan-950 font-medium text-2xl">
-                  Fix Mobile Button Issue
+                <p id="title" class="mb-3 text-cyan-950 font-medium text-2xl">
+                  Optimize  Home page 
                 </p>
                 <!-- description -->
                 <div class="bg-white px-4 py-4 rounded-xl mb-3">
@@ -219,7 +219,7 @@
                   <p class="text-cyan-950 font-normal text-sm">
                     Deadline <br />
                     <span class="text-cyan-950 font-medium text-base"
-                      >21 March 2025</span
+                      >29 April  2025</span
                     >
                   </p>
                   <button
@@ -241,11 +241,11 @@
                 <div
                   class="mb-3 bg-white w-[114px] h-[40px] px-4 py-2 rounded-xl"
                 >
-                  <p class="text-cyan-950 font-normal text-base">shopEase</p>
+                  <p class="text-cyan-950 font-normal text-base">Meta</p>
                 </div>
                 <!-- title -->
-                <p class="mb-3 text-cyan-950 font-medium text-2xl">
-                  Fix Mobile Button Issue
+                <p id="title" class="mb-3 text-cyan-950 font-medium text-2xl">
+                  Add new emoji 🤲 
                 </p>
                 <!-- description -->
                 <div class="bg-white px-4 py-4 rounded-xl mb-3">
@@ -282,11 +282,11 @@
                 <div
                   class="mb-3 bg-white w-[114px] h-[40px] px-4 py-2 rounded-xl"
                 >
-                  <p class="text-cyan-950 font-normal text-base">shopEase</p>
+                  <p class="text-cyan-950 font-normal text-base">Google LLC</p>
                 </div>
                 <!-- title -->
                 <p id="title" class="mb-3 text-cyan-950 font-medium text-2xl">
-                  Fix Mobile Button Issue
+                  Integrate OpenAI API  
                 </p>
                 <!-- description -->
                 <div class="bg-white px-4 py-4 rounded-xl mb-3">
@@ -323,11 +323,11 @@
                 <div
                   class="mb-3 bg-white w-[114px] h-[40px] px-4 py-2 rounded-xl"
                 >
-                  <p class="text-cyan-950 font-normal text-base">shopEase</p>
+                  <p  class="text-cyan-950 font-normal text-base">Glassdoar</p>
                 </div>
                 <!-- title -->
-                <p class="mb-3 text-cyan-950 font-medium text-2xl">
-                  Fix Mobile Button Issue
+                <p id="title" class="mb-3 text-cyan-950 font-medium text-2xl">
+                  Improve Job searching 
                 </p>
                 <!-- description -->
                 <div class="bg-white px-4 py-4 rounded-xl mb-3">
@@ -370,6 +370,7 @@
 
         </div>
       </section>
+      
     </main>
 
     <script src="./Script/script.js"></script>
