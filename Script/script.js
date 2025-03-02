@@ -4,7 +4,7 @@ const buttons = document.querySelectorAll("#completed-btn");
 for (let i = 0; i < buttons.length; i++) {
   const btn = buttons[i];
   btn.addEventListener("click", function (event) {
-    alert("Board Update Successfully");
+    
 
     btn.style.backgroundColor = "gray";
     btn.style.color = "black";
@@ -23,23 +23,30 @@ for (let i = 0; i < buttons.length; i++) {
 
       const container = document.getElementById("history-section");
       let activityCounter = 1;
-      
+
 
       const currentTime = new Date().toLocaleTimeString();
-      const title = document.querySelectorAll('#title');
-      const titles = title.innerText;
+      
+      
+  
+
       const div = document.createElement("div");
 
       div.innerHTML = `
       <div id="activity-log" class="bg-blue-50 text-black font-normal text-base w-[280px] ml-3 mt-8 rounded-3xl pl-3 pt-3 h-[90px]">
-      <p>You have Complete The Task <br> ${titles} at + ${currentTime}</p>
+      <p>You have Complete The Task <br>  at + ${currentTime}</p>
        </div>`;
 
       container.appendChild(div);
       activityCounter++;
+      alert("Board Update Successfully");
 
+      if (convertedCount1 === 1) {
+        alert("Congrats You have done all current task");
+      }
     } else {
-      alert("Congrats You have done all current task");
+
+      alert('complete the task')
     }
   });
 }
@@ -85,11 +92,11 @@ document.querySelector("#local-date").innerText = `${day}, ${date}`;
 function getRandomColor() {
   let letter = '0123456789ABCDEF';
   let color = '#';
-  
-  
+
+
   for (let i = 0; i < 6; i++) {
 
-    color+= letter[Math.floor(Math.random() * 16)];
+    color += letter[Math.floor(Math.random() * 16)];
   }
 
   return color;
@@ -98,8 +105,8 @@ function getRandomColor() {
 
 const colorChangeBtn = document.getElementById('change-color-btn');
 
-colorChangeBtn.addEventListener('click' ,
+colorChangeBtn.addEventListener('click',
   function () {
-   document.body.style.background = getRandomColor();
+    document.body.style.background = getRandomColor();
   }
 )
